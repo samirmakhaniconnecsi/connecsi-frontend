@@ -1,0 +1,51 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+li {
+  float: left;
+  min-width: 12%;
+}
+
+li a {
+  display: block;
+  color:#696969;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+.customHeader {
+  width: 100%;
+}
+
+.headerCustom {
+  width: 75%;
+  float: right;
+}
+
+.navbar {
+  padding: 15px 10px;
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0px;
+  box-shadow: 0px;
+}
+
+.customLogo {
+  float: left;
+  margin-top: 10px;
+}
+
+.lockIcon{
+  color: #732BBF;
+  font-size: 20px;
+}
+
+#subMenulist li{
+  width: 100%;
+}

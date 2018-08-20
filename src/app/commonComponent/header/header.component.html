@@ -1,0 +1,71 @@
+<div class="row">
+  <nav class="navbar navbar-inverse customHeader">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <img src="../../../assets/images/logo.PNG" alt="logo" routerLink="/dashboard" class="img-responsive customLogo">
+        <ul class="headerCustom">
+          <li>
+            <a class="active" routerLink="/platform">
+              <strong>Platform</strong>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/about">
+              <strong>About</strong>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/solutions">
+              <strong>Solutions</strong>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/classfields">
+              <strong>Classfields</strong>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/blog">
+              <strong>Blog</strong>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/brand">
+              <strong>Brand</strong>
+            </a>
+          </li>
+          <li>
+            <a routerLink="/influencer">
+              <strong>Influencer</strong>
+            </a>
+          </li>
+          <li class="dropdown" style="text-align: center">
+            <strong id="togelMenu">
+
+              <span class="glyphicon glyphicon-lock lockIcon"></span>
+              <br/>
+              <label>Login/Sign up</label>
+            </strong>
+            <ul id="subMenulist" class="dropdown-menu">
+              <li>
+                <a (click)="login()">Brands</a>
+              </li>
+              <li>
+                <a href="#">Influencer</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</div>

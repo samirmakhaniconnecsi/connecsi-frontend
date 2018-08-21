@@ -9,70 +9,8 @@
   margin-top: 12px;
   padding-top: 12px;
   max-width: 90%;
-  width: 543px;
+  width: 800px;
   text-align: center;
-}
-
-.subdivisonStyle {
-  justify-content: center;
-  margin-top: 12px;
-  background-color: #EEEEEE;
-  width: 543px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 96%;
-}
-
-.headerLeft {
-  float: left;
-}
-
-.headerRight {
-  float: right;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.formCustomStyle {
-  width: 90%;
-  margin-top: 24px;
-}
-
-.remember {
-  width: 100%;
-  text-align: left;
-}
-
-.boxlogin {
-  margin-bottom: 0.2rem;
-}
-
-.loginButton {
-  font-weight: bold;
-  color: #FAF50B;
-  background-color: #732BBF;
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.2rem;
-}
-
-.linesubdivison {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-top: 2px solid rgba(0, 0, 0, .5);
-}
-
-.registrationButton {
-  font-weight: bold;
-  color: #FAF50B;
-  background-color: #732BBF;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.2rem;
-  min-width: 38%;
-  max-width: 50%;
 }
 
 .logoDesing {
@@ -80,6 +18,98 @@
   background: -webkit-linear-gradient(#A4428B, #732BBF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.subdivisonStyle {
+  justify-content: center;
+  margin-top: 12px;
+  background-color: #EEEEEE;
+  width: 800px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 96%;
+}
+
+.registrationfield {
+  width: 100%;
+}
+
+.FormCustomonzation {
+  width: 100%;
+  padding-top: 24px;
+}
+
+.formfiled {
+  width: 75%;
+  margin-left: 12%;
+  float: left;
+}
+
+.alertLable {
+  color: #dc3545;
+  float: left;
+  margin-left: 12px;
+  font-size: 24px;
+}
+
+.spacingRow {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.termsCondition {
+  justify-content: center;
+}
+
+.customlable {
+  font-weight: 100;
+}
+
+.changeColor {
+  color: #8EABDF;
+}
+
+.signupButton {
+  font-weight: bold;
+  color: #FAF50B;
+  background-color: #732BBF;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.2rem;
+  float: right;
+}
+
+.linkedinBox {
+  float: left;
+  padding-top: 9px;
+}
+
+.customlinked {
+  height: 45px;
+  width: 45px;
+  position: relative;
+  margin-left: 24px;
+  float: left;
+}
+
+.linesubdivison {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-top: 2px solid rgba(0, 0, 0, .5);
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.loginButton {
+  font-weight: bold;
+  color: #FAF50B;
+  background-color: #732BBF;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.2rem;
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 600px) {
@@ -94,7 +124,10 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .headerBox {
+    max-width: 92%;
+  }
   .headerStyle {
     justify-content: left;
     margin-left: 0px;
@@ -106,6 +139,14 @@
     justify-content: left;
     margin-left: 0px;
     margin-right: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .signupButton{
+    float: none
+  }
+  .linkedinBox{
+    margin-left: 29%;
   }
   .bannerFont{
     font-size: 1.1rem;

@@ -23,6 +23,9 @@ import { InfluencerComponent } from './globalComponent/influencer/influencer.com
 import { LoginInfluencerComponent } from './commonComponent/loginInfluencer/loginInfluencer.component';
 import { ModalModule } from 'ngx-bootstrap';
 import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.component';
+import { RegistrationComponent } from './commonComponent/registration/registration.component';
+import { UserService } from './core/services/user.service';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +42,8 @@ import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.com
     BrandComponent,
     InfluencerComponent,
     LoginInfluencerComponent,
-    LoginBrandComponent
+    LoginBrandComponent,
+    RegistrationComponent
   ],
   imports: [
     HttpClientModule,
@@ -54,7 +58,7 @@ import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.com
     ModalModule.forRoot()
   ],
   providers: [
-
+UserService
   ],
   bootstrap: [AppComponent]
 })

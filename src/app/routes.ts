@@ -10,7 +10,7 @@ import { BrandComponent } from './globalComponent/brand/brand.component';
 import { InfluencerComponent } from './globalComponent/influencer/influencer.component';
 import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.component';
 import { LoginInfluencerComponent } from './commonComponent/loginInfluencer/loginInfluencer.component';
-
+import { RegistrationComponent } from './commonComponent/registration/registration.component';
 
 
 
@@ -25,6 +25,7 @@ const mainRoutes: Routes = [
   { path: 'influencer', component: InfluencerComponent, },
   { path: 'loginBrand', component: LoginBrandComponent, },
   { path: 'loginInfluencer', component: LoginInfluencerComponent, },
+  { path: 'registration', component: RegistrationComponent, }
 ];
 
 

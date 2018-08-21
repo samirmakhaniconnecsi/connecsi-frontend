@@ -8,6 +8,8 @@ import { ClassfieldsComponent } from './globalComponent/classfields/classfields.
 import { BlogComponent } from './globalComponent/blog/blog.component';
 import { BrandComponent } from './globalComponent/brand/brand.component';
 import { InfluencerComponent } from './globalComponent/influencer/influencer.component';
+import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.component';
+import { LoginInfluencerComponent } from './commonComponent/loginInfluencer/loginInfluencer.component';
 
 
 
@@ -21,6 +23,8 @@ const mainRoutes: Routes = [
   { path: 'blog', component: BlogComponent, },
   { path: 'brand', component: BrandComponent, },
   { path: 'influencer', component: InfluencerComponent, },
+  { path: 'loginBrand', component: LoginBrandComponent, },
+  { path: 'loginInfluencer', component: LoginInfluencerComponent, },
 ];
 
 

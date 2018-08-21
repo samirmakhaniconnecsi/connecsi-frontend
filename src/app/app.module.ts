@@ -3,20 +3,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
 import { AppComponent } from './app.component';
-
 import { DashboardComponent } from './main/dashboard/dashboard.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { BsDatepickerModule } from 'ngx-bootstrap';
-
 import { MainComponent } from './main/main.component';
 import { routes } from './routes';
-
-
 import { ToastrModule } from 'ngx-toastr';
-
 import { FileUploadModule } from 'ng2-file-upload';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './commonComponent/header/header.component';
@@ -27,8 +20,9 @@ import { ClassfieldsComponent } from './globalComponent/classfields/classfields.
 import { BlogComponent } from './globalComponent/blog/blog.component';
 import { BrandComponent } from './globalComponent/brand/brand.component';
 import { InfluencerComponent } from './globalComponent/influencer/influencer.component';
-import { LoginComponent } from './commonComponent/login/login.component';
+import { LoginInfluencerComponent } from './commonComponent/loginInfluencer/loginInfluencer.component';
 import { ModalModule } from 'ngx-bootstrap';
+import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +38,8 @@ import { ModalModule } from 'ngx-bootstrap';
     BlogComponent,
     BrandComponent,
     InfluencerComponent,
-    LoginComponent
+    LoginInfluencerComponent,
+    LoginBrandComponent
   ],
   imports: [
     HttpClientModule,
@@ -60,9 +55,6 @@ import { ModalModule } from 'ngx-bootstrap';
   ],
   providers: [
 
-  ],
-  entryComponents: [
-    LoginComponent
   ],
   bootstrap: [AppComponent]
 })

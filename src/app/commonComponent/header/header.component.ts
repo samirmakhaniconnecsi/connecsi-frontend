@@ -1,6 +1,5 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
-import { BsModalRef, BsModalService } from 'ngx-bootstrap';
-import { LoginComponent } from '../login/login.component';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-header',
@@ -8,14 +7,12 @@ import { LoginComponent } from '../login/login.component';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  bsModalRef: BsModalRef;
-  constructor(private modalService: BsModalService, ) { }
+
+  constructor() { }
 
   ngOnInit() {
 
   }
-  login() {
-    this.bsModalRef = this.modalService.show(LoginComponent, /*{class: 'modal-lg'}*/);
-  }
+
 
 }

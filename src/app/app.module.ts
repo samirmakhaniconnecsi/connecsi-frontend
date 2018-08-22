@@ -25,7 +25,8 @@ import { ModalModule } from 'ngx-bootstrap';
 import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.component';
 import { RegistrationComponent } from './commonComponent/registration/registration.component';
 import { UserService } from './core/services/user.service';
-
+import { RegistrationSuccessfullyComponent } from './commonComponent/registrationSuccessfully/registrationSuccessfully.component';
+import { WebStorageModule } from 'ngx-store';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { UserService } from './core/services/user.service';
     InfluencerComponent,
     LoginInfluencerComponent,
     LoginBrandComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    RegistrationSuccessfullyComponent
   ],
   imports: [
     HttpClientModule,
@@ -55,7 +57,8 @@ import { UserService } from './core/services/user.service';
     BsDatepickerModule.forRoot(),
     ToastrModule.forRoot(),
     FileUploadModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    WebStorageModule,
   ],
   providers: [
 UserService

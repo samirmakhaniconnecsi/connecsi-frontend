@@ -25,5 +25,15 @@ export class UserService {
                     return error;
                 }));
     }
+    registerService(body): Observable<any> {
+        const url = this.domain + "/api/Brand/register";
+        return this.httpClient.post(url, body, { observe: 'response' }).pipe(
+            map((res: HttpResponse<any>) => {
+                return res;
+            },
+                error => {
+                    return error;
+                }));
+    }
 
 }

@@ -1,0 +1,69 @@
+.headerStyle {
+  justify-content: center;
+}
+
+.headerBox {
+  background-color: #EEEEEE;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 12px;
+  padding-top: 12px;
+  max-width: 90%;
+  width: 543px;
+  text-align: center;
+}
+
+.logoDesing {
+  margin-left: 10px;
+  background: -webkit-linear-gradient(#A4428B, #732BBF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subdivisonStyle {
+  justify-content: center;
+  margin-top: 12px;
+  background-color: #EEEEEE;
+  width: 543px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 96%;
+}
+
+.continueButton {
+  font-weight: bold;
+  color: #FAF50B;
+  background-color: #732BBF;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-top: 12px;
+}
+
+.banner {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.message {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 766px) {
+  .subdivisonStyle {
+    max-width: 87%;
+  }
+}
+
+@media (max-width: 767px) {
+  .subdivisonStyle {
+    justify-content: left;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

@@ -11,6 +11,7 @@ import { InfluencerComponent } from './globalComponent/influencer/influencer.com
 import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.component';
 import { LoginInfluencerComponent } from './commonComponent/loginInfluencer/loginInfluencer.component';
 import { RegistrationComponent } from './commonComponent/registration/registration.component';
+import { RegistrationSuccessfullyComponent } from './commonComponent/registrationSuccessfully/registrationSuccessfully.component';
 
 
 
@@ -25,12 +26,13 @@ const mainRoutes: Routes = [
   { path: 'influencer', component: InfluencerComponent, },
   { path: 'loginBrand', component: LoginBrandComponent, },
   { path: 'loginInfluencer', component: LoginInfluencerComponent, },
-  { path: 'registration', component: RegistrationComponent, }
+  { path: 'registration', component: RegistrationComponent, },
+  { path: 'registrationSuccessfully', component: RegistrationSuccessfullyComponent, }
 ];
 
 
 export const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: '', component: MainComponent, children: mainRoutes },
- 
+
 ];

@@ -2,7 +2,9 @@ import { Component, OnInit, TemplateRef } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserService } from '../../core/services/user.service';
 import { ToastrService } from 'ngx-toastr';
-import { SessionStorage } from 'ngx-store';
+import { AuthService } from '../../core/services/auth.service';
+import { Router } from '@angular/router';
+AuthService
 @Component({
   selector: 'app-loginBrand',
   templateUrl: './loginBrand.component.html',
@@ -12,7 +14,9 @@ export class LoginBrandComponent implements OnInit {
   loginForm: FormGroup;
   constructor(private formBuilder: FormBuilder,
     private userservice: UserService,
-    private toastrService: ToastrService) { }
+    private toastrService: ToastrService,
+    private authService: AuthService,
+    private router: Router, ) { }
 
   ngOnInit() {
     this.initLoginForm();
@@ -33,6 +37,9 @@ export class LoginBrandComponent implements OnInit {
       this.userservice.loginService(loginForm.value).subscribe((res) => {
         this.toastrService.success("Login is successfully Done");
         window.sessionStorage.setItem("connecsi_key", res.body["user_id"]);
+        this.authService.setLoginStatus(true);
+        this.router.navigate(['/dashboard']);
+
       }), (error) => {
         this.toastrService.error("Something went wrong!")
       }

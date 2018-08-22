@@ -1,0 +1,33 @@
+.headercustom {
+  border: 0px;
+  margin-bottom: 0px;
+  background-color: #fff;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 0px;
+}
+
+.imageBox {
+  width: 250px;
+  padding: 19px;
+  background: linear-gradient(to top, #EFEFEC, #DCDCDC);
+}
+
+.progileBox {
+  float: right;
+  width: 250px;
+  padding: 19px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+
+.profilelogo {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+  margin-top: -10px;
+}

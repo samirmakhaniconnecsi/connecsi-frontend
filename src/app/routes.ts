@@ -12,11 +12,11 @@ import { LoginBrandComponent } from './commonComponent/loginBrand/loginBrand.com
 import { LoginInfluencerComponent } from './commonComponent/loginInfluencer/loginInfluencer.component';
 import { RegistrationComponent } from './commonComponent/registration/registration.component';
 import { RegistrationSuccessfullyComponent } from './commonComponent/registrationSuccessfully/registrationSuccessfully.component';
-
+import { AuthGuard } from './core/config/auth.guard';
 
 
 const mainRoutes: Routes = [
-  { path: 'dashboard', component: DashboardComponent, },
+  { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'platform', component: PlatformComponent, },
   { path: 'about', component: AboutComponent, },
   { path: 'solutions', component: SolutionsComponent, },

@@ -1,7 +1,8 @@
-<app-header></app-header>
+<app-header *ngIf="!message"> </app-header>
+<app-login-header *ngIf="message"></app-login-header>
 <div class="wrapper">
   <!-- Sidebar Holder -->
-  <app-sidenav></app-sidenav>
+  <app-sidenav [hidden]="!message"></app-sidenav>
 
   <!-- Page Content Holder -->
   <div class="mainContent">

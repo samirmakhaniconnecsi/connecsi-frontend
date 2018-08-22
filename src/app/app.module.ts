@@ -27,6 +27,8 @@ import { RegistrationComponent } from './commonComponent/registration/registrati
 import { UserService } from './core/services/user.service';
 import { RegistrationSuccessfullyComponent } from './commonComponent/registrationSuccessfully/registrationSuccessfully.component';
 import { WebStorageModule } from 'ngx-store';
+import { AuthGuard } from './core/config/auth.guard';
+import { LoginHeaderComponent } from './commonComponent/loginHeader/loginheader.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,8 @@ import { WebStorageModule } from 'ngx-store';
     LoginInfluencerComponent,
     LoginBrandComponent,
     RegistrationComponent,
-    RegistrationSuccessfullyComponent
+    RegistrationSuccessfullyComponent,
+    LoginHeaderComponent
   ],
   imports: [
     HttpClientModule,
@@ -61,7 +64,8 @@ import { WebStorageModule } from 'ngx-store';
     WebStorageModule,
   ],
   providers: [
-UserService
+    AuthGuard,
+    UserService
   ],
   bootstrap: [AppComponent]
 })

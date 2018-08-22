@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { DashboardComponent } from './main/dashboard/dashboard.component';
-import { PlatformComponent } from './globalComponent/Platform/Platform.component';
+import { PlatformComponent } from './globalComponent/Platform/platform.component';
 import { AboutComponent } from './globalComponent/about/about.component';
 import { SolutionsComponent } from './globalComponent/solutions/solutions.component';
 import { ClassfieldsComponent } from './globalComponent/classfields/classfields.component';

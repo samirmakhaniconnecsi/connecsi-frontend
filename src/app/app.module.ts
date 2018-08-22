@@ -13,7 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { FileUploadModule } from 'ng2-file-upload';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HeaderComponent } from './commonComponent/header/header.component';
-import { PlatformComponent } from './globalComponent/Platform/Platform.component';
+import { PlatformComponent } from './globalComponent/Platform/platform.component';
 import { AboutComponent } from './globalComponent/about/about.component';
 import { SolutionsComponent } from './globalComponent/solutions/solutions.component';
 import { ClassfieldsComponent } from './globalComponent/classfields/classfields.component';
@@ -28,7 +28,7 @@ import { UserService } from './core/services/user.service';
 import { RegistrationSuccessfullyComponent } from './commonComponent/registrationSuccessfully/registrationSuccessfully.component';
 import { WebStorageModule } from 'ngx-store';
 import { AuthGuard } from './core/config/auth.guard';
-import { LoginHeaderComponent } from './commonComponent/loginHeader/loginheader.component';
+import { LoginHeaderComponent } from './commonComponent/loginHeader/loginHeader.component';
 
 @NgModule({
   declarations: [
@@ -37,12 +37,12 @@ import { LoginHeaderComponent } from './commonComponent/loginHeader/loginheader.
     MainComponent,
     SidenavComponent,
     HeaderComponent,
-    PlatformComponent,
     AboutComponent,
     SolutionsComponent,
     ClassfieldsComponent,
     BlogComponent,
     BrandComponent,
+    PlatformComponent,
     InfluencerComponent,
     LoginInfluencerComponent,
     LoginBrandComponent,

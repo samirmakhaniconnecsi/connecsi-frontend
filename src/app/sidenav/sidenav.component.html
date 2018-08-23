@@ -1,6 +1,10 @@
-<nav id="sidebar" class="active">
-  <div id=test class="sidebar-header">
-    <h3>Admin Panel</h3>
+<nav id="sidebar" [ngClass]="{'active': classTogal }">
+  <div id=test class="sidebar-header" (click)="sidenavBar()">
+    <h3>
+      <span class="imageBox">
+        <img src="../../../assets/images/logo.PNG">
+      </span>
+    </h3>
     <strong>
       <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
     </strong>
@@ -10,35 +14,35 @@
     <li class="active">
       <a>
         <i class="glyphicon glyphicon-search"></i>
-        <label class="tag">Search</label>
+        <label [ngStyle]="{'display':classTogal ? 'none' : 'inline-block' }" class="tag">Search</label>
       </a>
     </li>
     <li>
       <a>
         <i class="glyphicon glyphicon-briefcase"></i>
-        <label class="tag">About</label>
+        <label [ngStyle]="{'display':classTogal ? 'none' : 'inline-block' }">About</label>
       </a>
       <a>
         <i class="glyphicon glyphicon-duplicate"></i>
-        <label class="tag">Pages</label>
+        <label [ngStyle]="{'display':classTogal ? 'none' : 'inline-block' }">Pages</label>
       </a>
     </li>
     <li>
       <a>
         <i class="glyphicon glyphicon-link"></i>
-        <label class="tag">Portfolio</label>
+        <label [ngStyle]="{'display':classTogal ? 'none' : 'inline-block' }">Portfolio</label>
       </a>
     </li>
     <li>
       <a>
         <i class="glyphicon glyphicon-paperclip"></i>
-        <label class="tag">FAQ</label>
+        <label [ngStyle]="{'display':classTogal ? 'none' : 'inline-block' }">FAQ</label>
       </a>
     </li>
     <li>
       <a>
         <i class="glyphicon glyphicon-send"></i>
-        <label class="tag">Contact</label>
+        <label [ngStyle]="{'display':classTogal ? 'none' : 'inline-block' }">Contact</label>
       </a>
     </li>
   </ul>

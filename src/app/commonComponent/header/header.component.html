@@ -1,15 +1,15 @@
 <div class="row">
   <nav class="navbar navbar-inverse customHeader">
     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+      <div class="navbar-header" style="width: 100%">
+        <button type="button" class="navbar-toggle" (click)="headerMainmenu()"   >
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
 
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse" id="myNavbar" [ngStyle]="{'display':togelMainMenu ? 'none' : 'block' }">
         <img src="../../../assets/images/logo.PNG" alt="logo" routerLink="/dashboard" class="img-responsive customLogo">
         <ul class="headerCustom">
           <li>
@@ -48,18 +48,18 @@
             </a>
           </li>
           <li class="dropdown" style="text-align: center">
-            <strong id="togelMenu">
+            <strong id="togelMenu" (click)="headersubmenu()">
 
               <span class="glyphicon glyphicon-lock lockIcon"></span>
               <br/>
               <label>Login/Sign up</label>
             </strong>
-            <ul id="subMenulist" class="dropdown-menu">
+            <ul id="subMenulist" class="dropdown-menu" [ngStyle]="{'display':togelHeaderMenu ? 'none' : 'block' }">
               <li>
-                <a routerLink="/loginBrand" >Brands</a>
+                <a routerLink="/loginBrand">Brands</a>
               </li>
               <li>
-                <a routerLink="/loginInfluencer" >Influencer</a>
+                <a routerLink="/loginInfluencer">Influencer</a>
               </li>
             </ul>
           </li>

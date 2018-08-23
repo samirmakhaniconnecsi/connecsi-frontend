@@ -56,3 +56,28 @@ li a {
   color: #732BBF;
   background-color: #ABABAB
 }
+
+@media (max-width: 500px) {
+  .headerCustom {
+    width: 100%;
+  }
+  li {
+    width: 100%;
+  }
+  .customLogo {
+    width: 100%;
+  }
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+.navbar-inverse[_ngcontent-c2] .navbar-toggle[_ngcontent-c2] .icon-bar[_ngcontent-c2] {
+   background-color: #fff; 
+}
+.navbar-inverse[_ngcontent-c2][_ngcontent-c2] .navbar-toggle[_ngcontent-c2][_ngcontent-c2] .icon-bar[_ngcontent-c2][_ngcontent-c2] {
+  background-color: black;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background-color: #fff;
+}

@@ -7,12 +7,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-
+  togelHeaderMenu: boolean;
+  togelMainMenu: boolean;
+  constructor() {
   }
 
+  ngOnInit() {
+    this.togelHeaderMenu = true;
+    if (window.screen.width > 500) {
+      this.togelMainMenu = true;
+    } else {
+      this.togelMainMenu = false;
+    }
+  }
+  headersubmenu() {
+    this.togelHeaderMenu = !this.togelHeaderMenu;
+  }
+  headerMainmenu() {
+    if (window.screen.width < 500) {
+      this.togelMainMenu = !this.togelMainMenu;
+    } else {
+      this.togelMainMenu = true;
+    }
+  }
 
 }

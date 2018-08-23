@@ -1,17 +1,14 @@
 <div class="well headercustom">
 
   <span class="imageBox">
-    <img src="../../../assets/images/logo.PNG">
-
-
   </span>
   <span class="progileBox">
     <ul>
       <li class="dropdown" style="text-align: center">
-        <strong id="togelMenu">
+        <strong id="togelMenu" (click)="loginHeadersubmenu()">
           <img src="../../../assets/images/avatar.PNG" class="img-rounded profilelogo">
         </strong>
-        <ul id="subMenulist" class="dropdown-menu">
+        <ul id="subMenulist" class="dropdown-menu" [ngStyle]="{'display':togelLoginHeaderMenu ? 'none' : 'block' }">
           <li>
             <a routerLink="/">View Profile</a>
           </li>

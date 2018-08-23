@@ -8,15 +8,20 @@ import { Router } from '@angular/router';
 })
 export class LoginHeaderComponent implements OnInit {
 
+  togelLoginHeaderMenu: boolean;
   constructor(private authService: AuthService,
     private router: Router) { }
 
   ngOnInit() {
+
+    this.togelLoginHeaderMenu = true;
   }
   logout() {
-
     window.sessionStorage.removeItem("connecsi_key");
     this.authService.setLoginStatus(false);
     this.router.navigate(['/platform']);
+  }
+  loginHeadersubmenu() {
+    this.togelLoginHeaderMenu = !this.togelLoginHeaderMenu;
   }
 }

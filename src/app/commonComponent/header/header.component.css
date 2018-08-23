@@ -57,6 +57,10 @@ li a {
   background-color: #ABABAB
 }
 
+.mobileLogo {
+  display: none;
+}
+
 @media (max-width: 500px) {
   .headerCustom {
     width: 100%;
@@ -67,17 +71,28 @@ li a {
   .customLogo {
     width: 100%;
   }
+  .mobileLogo {
+    display: block;
+    float: left;
+  }
+  .customLogo {
+    display: none;
+  }
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
   background-color: #000;
 }
+
 .navbar-inverse[_ngcontent-c2] .navbar-toggle[_ngcontent-c2] .icon-bar[_ngcontent-c2] {
-   background-color: #fff; 
+  background-color: #fff;
 }
+
 .navbar-inverse[_ngcontent-c2][_ngcontent-c2] .navbar-toggle[_ngcontent-c2][_ngcontent-c2] .icon-bar[_ngcontent-c2][_ngcontent-c2] {
   background-color: black;
 }
-.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
   background-color: #fff;
 }

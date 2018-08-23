@@ -1,0 +1,22 @@
+.btn-1 {
+  color: white;
+  width: 500px;
+  background-image: linear-gradient(to right, #87ADEB 0%, #87ADEB 51%, #87CEEB 100%);
+  margin-left: 32%;
+  max-width: 43%;
+  height: 60px;
+}
+
+.btn-2 {
+  color: white;
+  width: 500px;
+  background-image: linear-gradient(to right, #9A00FF 0%, #A4428B 51%, #A4428B 100%);
+  margin-left: 32%;
+  max-width: 43%;
+  height: 60px;
+}
+
+.buttonBox {
+  margin-top: 72px;
+  justify-content: center;
+}

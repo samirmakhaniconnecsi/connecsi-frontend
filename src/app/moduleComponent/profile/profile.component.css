@@ -1,0 +1,53 @@
+.profileDivison {
+  width: 90%;
+  background-color: #FFFFFF;
+  margin-top: 48px;
+  margin-left: 5%;
+}
+
+.imageBox {
+  width: 250px;
+  padding: 19px;
+}
+
+.detailsBox {
+  width: 500px;
+  padding: 19px;
+}
+
+.progileBox {
+  float: right;
+  width: 250px;
+  padding: 19px;
+}
+
+.profilelogo {
+  height: 85px;
+  width: 85px;
+  border-radius: 100px;
+  margin-left: 22%;
+}
+
+.wrapper {
+  background-color: #E6E6E6;
+}
+
+#menu-outer {
+  height: 84px;
+}
+
+.table {
+  display: table;
+  /* Allow the centering to work */
+  margin: 0 auto;
+}
+
+ul#horizontal-list {
+  min-width: 696px;
+  list-style: none;
+  padding-top: 20px;
+}
+
+ul#horizontal-list li {
+  display: inline;
+}

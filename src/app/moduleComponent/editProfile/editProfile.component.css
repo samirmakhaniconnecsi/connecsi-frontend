@@ -63,6 +63,16 @@ ul#horizontal-list li span {
   width: 60px;
 }
 
+.spacingsetting {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.spacingTitle {
+  padding-top: 12px;
+  margin-left: 40px;
+}
+
 @media (max-width: 500px) {
   ul#horizontal-list {
     text-align: left;

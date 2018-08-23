@@ -30,6 +30,7 @@ import { WebStorageModule } from 'ngx-store';
 import { AuthGuard } from './core/config/auth.guard';
 import { LoginHeaderComponent } from './commonComponent/loginHeader/loginHeader.component';
 import { ProfileComponent } from './moduleComponent/profile/profile.component';
+import { EditProfileComponent } from './moduleComponent/editProfile/editProfile.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { ProfileComponent } from './moduleComponent/profile/profile.component';
     RegistrationComponent,
     RegistrationSuccessfullyComponent,
     LoginHeaderComponent,
-    ProfileComponent
+    ProfileComponent,
+    EditProfileComponent
   ],
   imports: [
     HttpClientModule,

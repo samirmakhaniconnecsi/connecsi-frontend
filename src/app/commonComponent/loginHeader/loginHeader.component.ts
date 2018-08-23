@@ -17,6 +17,6 @@ export class LoginHeaderComponent implements OnInit {
 
     window.sessionStorage.removeItem("connecsi_key");
     this.authService.setLoginStatus(false);
-    this.router.navigate(['/loginBrand']);
+    this.router.navigate(['/platform']);
   }
 }

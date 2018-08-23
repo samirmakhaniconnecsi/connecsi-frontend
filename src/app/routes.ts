@@ -32,7 +32,7 @@ const mainRoutes: Routes = [
 
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/platform', pathMatch: 'full' },
   { path: '', component: MainComponent, children: mainRoutes },
 
 ];

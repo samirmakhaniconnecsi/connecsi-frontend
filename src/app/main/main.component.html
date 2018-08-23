@@ -1,13 +1,10 @@
 <app-header *ngIf="!message"> </app-header>
-<app-login-header *ngIf="message"></app-login-header>
-<div class="wrapper">
-  <!-- Sidebar Holder -->
-  <app-sidenav [hidden]="!message"></app-sidenav>
+<!-- <app-login-header *ngIf="message"></app-login-header> -->
 
-  <!-- Page Content Holder -->
-  <div class="mainContent">
-    <main>
-      <router-outlet></router-outlet>
-    </main>
-  </div>
-</div>
+<!-- Sidebar Holder -->
+<!-- <app-sidenav [hidden]="!message"></app-sidenav> -->
+
+<!-- Page Content Holder -->
+
+
+<router-outlet></router-outlet>

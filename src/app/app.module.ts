@@ -35,7 +35,7 @@ import { BrandService } from './core/services/brand.service';
 import { SearchBrandComponent } from './moduleComponent/searchBrand/searchBrand.component';
 import { YoutubeService } from './core/services/youtube.service';
 import { TypeaheadModule } from 'ngx-bootstrap';
-
+import { RangeSliderModule } from 'ngx-range-slider'
 
 @NgModule({
   declarations: [
@@ -72,7 +72,8 @@ import { TypeaheadModule } from 'ngx-bootstrap';
     FileUploadModule,
     ModalModule.forRoot(),
     WebStorageModule,
-    TypeaheadModule.forRoot()
+    TypeaheadModule.forRoot(),
+    RangeSliderModule
   ],
   providers: [
     AuthGuard,

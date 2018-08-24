@@ -3,8 +3,10 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
 import { ActivatedRoute } from '@angular/router';
 import { BrandService } from '../../core/services/brand.service';
+import { BrandDetails } from '../../core/model/brandDetils';
 declare function require(url: string);
 let countryjson = require('../../core/utilities/country.json');
+
 
 @Component({
   selector: 'app-edit-profile',
@@ -13,6 +15,7 @@ let countryjson = require('../../core/utilities/country.json');
 })
 export class EditProfileComponent implements OnInit {
   brandDetilas: FormGroup;
+  profileDetilas:any;
 
   countries: any;
   constructor(
@@ -23,6 +26,7 @@ export class EditProfileComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.profileDetilas=BrandDetails;
     this.countries = countryjson;
     this.initbrandDetilasForm();
     this.getBranDetilas();
@@ -65,6 +69,7 @@ export class EditProfileComponent implements OnInit {
             monthly_budget: data.monthly_budget,
             business_sector: data.business_sector
           });
+          this.profileDetilas = data;
         } else {
 
         }

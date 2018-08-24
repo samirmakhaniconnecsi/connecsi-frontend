@@ -10,40 +10,22 @@
       <div class="well wallBackground">
 
         <div class="row adjustTextBox">
-          <div >
-              <input [(ngModel)]="selected"
-              [typeahead]="states"
-              placeholder="Enter Keywords"
-              class="form-control">
+          <div>
+            <input [(ngModel)]="selected" [typeahead]="states" placeholder="Enter Keywords" class="form-control">
           </div>
         </div>
 
         <div class="row adjustTextBox">
           <div class="col-md-4 col-sm-4 col-xs-12 adjustTextBoxChild">
-            <div >
+            <div>
               <label class="titleText">Channel</label>
-              <div class="form-group" id="dropDownList" style="justify-content: center;" >
-                <div class="btn-group">
-                  <a class="btn btn-default  " style="width: 168px;">
-                    <span class="selection pull-left">Select an option </span>
-                    <span class="pull-right glyphiconglyphicon-chevron-down caret" style="float:right;margin-top:10px;"></span>
-                  </a>
-                  <ul class="dropdown-menu" role="menu" id="list">
-                    <li>
-                      <a href="#" class="" data-value="1">
-
-                        <span> Instgram</span>
-
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="" data-value="2">
-
-                        <span> FaceBook</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              <div class="form-group">
+                <select class="form-control" style="max-width: 50%;">
+                  <option value="facebook">Facebook</option>
+                  <option value="twitter">Twitter</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="youtube">Youtube</option>
+                </select>
               </div>
             </div>
 
@@ -53,7 +35,7 @@
               <label class="titleText">Country</label>
               <div class="form-group">
                 <select class="form-control" style="max-width: 50%;">
-                    <option *ngFor="let country of countries" >1</option>
+                  <option *ngFor="let country of countries">1</option>
                 </select>
               </div>
             </div>
@@ -62,7 +44,8 @@
             <div class="form-group">
               <label class="titleText">Followers</label>
               <div class="form-group">
-                <input type="range" multiple value="10,80" />
+                <range-slider min="10" max="90" minValue="20" maxValue="60" step="10">
+                </range-slider>
               </div>
             </div>
           </div>
@@ -86,10 +69,11 @@
           <label>Influencers On Youtube</label>
         </div>
         <div class="col-md-4 col-sm-4 col-xs-3  sorting ">
-          <select>
-            <option value="Sort">Sort</option>
-
-          </select>
+          <div class="form-group">
+            <select class="form-group">
+              <option value="Sort">Sort</option>
+            </select>
+          </div>
         </div>
       </div>
 

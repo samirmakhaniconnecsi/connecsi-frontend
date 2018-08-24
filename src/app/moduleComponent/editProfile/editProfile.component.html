@@ -14,8 +14,8 @@
         </div>
         <div class="col-md-4  col-lg-3 col-sm-8 col-xs-8 ">
           <span class="detailsBox">
-            <h4>Mohit Kumar</h4>
-            <h6>CEO, Connecsi Ltd.</h6>
+            <h4>{{profileDetilas.first_name || ''}} {{profileDetilas.last_name}}</h4>
+            <h6>{{profileDetilas.position}}, {{profileDetilas.company_name}}</h6>
             <h6>Subscription Type:Basic</h6>
           </span>
         </div>
@@ -58,11 +58,7 @@
               <input type="text" class="form-control" formControlName="first_name" required="required" name="title" id="title" placeholder="First Name"
                 required>
             </div>
-            <div class="form-group">
-              <label for="title" class="col-form-label">*Last Name:</label>
-              <input type="text" class="form-control" required="required" formControlName="last_name" name="last_name" id="title" placeholder="Last Name"
-                required>
-            </div>
+            
             <div class="form-group">
               <label for="title" class="col-form-label">*Business Email:</label>
               <input type="text" class="form-control" required="required" formControlName="email_id" name="email" id="title" placeholder="Email Id"
@@ -74,18 +70,23 @@
             </div>
           </div>
           <div class="form-group  col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="form-group">
+                  <label for="title" class="col-form-label">*Last Name:</label>
+                  <input type="text" class="form-control" required="required" formControlName="last_name" name="last_name" id="title" placeholder="Last Name"
+                    required>
+                </div>
             <div class="form-group">
               <label for="title" class="col-form-label">Phone:</label>
               <input type="text" class="form-control" formControlName="phone" name="phone" id="title" placeholder="Phone">
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
               <label for="title" class="col-form-label">*Passsword:</label>
               <input type="text" class="form-control" required="required" name="passsword" id="passsword" placeholder="Passsword" required>
             </div>
             <div class="form-group">
               <label for="title" class="col-form-label">*Confirm Password:</label>
               <input type="text" class="form-control" required="required" name="title" id="passsword" placeholder="Confirm Passsword" required>
-            </div>
+            </div> -->
           </div>
         </div>
         <hr/>

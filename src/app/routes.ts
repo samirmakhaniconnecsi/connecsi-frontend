@@ -15,12 +15,14 @@ import { RegistrationSuccessfullyComponent } from './commonComponent/registratio
 import { AuthGuard } from './core/config/auth.guard';
 import { ProfileComponent } from './moduleComponent/profile/profile.component';
 import { EditProfileComponent } from './moduleComponent/editProfile/editProfile.component';
+import { SearchBrandComponent } from './moduleComponent/searchBrand/searchBrand.component';
 
 
 const mainRoutes: Routes = [
   { path: 'dashboard', component: DashboardComponent, canActivate: [AuthGuard] },
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'editProfile', component: EditProfileComponent, canActivate: [AuthGuard] },
+  { path: 'searchBrand', component: SearchBrandComponent, canActivate: [AuthGuard] },
   { path: 'platform', component: PlatformComponent, },
   { path: 'about', component: AboutComponent, },
   { path: 'solutions', component: SolutionsComponent, },

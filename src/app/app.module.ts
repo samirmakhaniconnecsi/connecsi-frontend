@@ -32,6 +32,10 @@ import { LoginHeaderComponent } from './commonComponent/loginHeader/loginHeader.
 import { ProfileComponent } from './moduleComponent/profile/profile.component';
 import { EditProfileComponent } from './moduleComponent/editProfile/editProfile.component';
 import { BrandService } from './core/services/brand.service';
+import { SearchBrandComponent } from './moduleComponent/searchBrand/searchBrand.component';
+import { YoutubeService } from './core/services/youtube.service';
+import { TypeaheadModule } from 'ngx-bootstrap';
+
 
 @NgModule({
   declarations: [
@@ -53,7 +57,8 @@ import { BrandService } from './core/services/brand.service';
     RegistrationSuccessfullyComponent,
     LoginHeaderComponent,
     ProfileComponent,
-    EditProfileComponent
+    EditProfileComponent,
+    SearchBrandComponent
   ],
   imports: [
     HttpClientModule,
@@ -67,11 +72,13 @@ import { BrandService } from './core/services/brand.service';
     FileUploadModule,
     ModalModule.forRoot(),
     WebStorageModule,
+    TypeaheadModule.forRoot()
   ],
   providers: [
     AuthGuard,
     UserService,
-    BrandService
+    BrandService,
+    YoutubeService
   ],
   bootstrap: [AppComponent]
 })

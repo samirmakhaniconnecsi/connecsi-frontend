@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
-  brandDetilas: any;
+  brandDetilas;
   constructor(private brandService: BrandService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {

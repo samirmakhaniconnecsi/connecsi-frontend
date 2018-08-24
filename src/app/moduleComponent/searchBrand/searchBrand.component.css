@@ -1,0 +1,102 @@
+.wallBackground {
+    margin-bottom: 5px;
+    width: 100%;
+    border-radius: 0px;
+    background: red;
+    /* For browsers that do not support gradients */
+    background: linear-gradient(to right, #9A00FF, #A4428B);
+    /* Standard syntax (must be last) */
+}
+
+.adjustTextBox {
+    text-align: -webkit-center;
+    justify-content: center;
+}
+
+.adjustTextBoxChild {
+    padding: 15px;
+}
+
+.titleText {
+    color: white;
+    opacity: .9;
+}
+
+.btn-1 {
+    color: white;
+    width: 150px;
+    background-image: linear-gradient(to right, #87ADEB 0%, #87ADEB 51%, #87CEEB 100%);
+}
+
+.iconColor {
+    color: black;
+    opacity: 0.3;
+}
+
+.subItem {
+    padding-bottom: 5px;
+    margin-left: 0px;
+    padding-left: 15px;
+    border-bottom: 1px solid #000;
+}
+
+.csvButton {
+    background-color: #A4428B;
+    color: white;
+    border-radius: 6px;
+    opacity: 0.9;
+    height: 24px;
+}
+
+.subTtileSubject {
+    text-align: center
+}
+
+.sorting {
+    padding-right: 35px;
+    text-align: right;
+}
+
+.mainContent {
+    width: 100%;
+}
+
+.pageLayout {
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-right: 0px;
+}
+
+.cardItem {
+    height: 200px;
+    width: 350px;
+    border: 2px #DCDCDC solid;
+    float: left;
+    margin: 10px;
+    max-width: 90%;
+}
+
+.avatarImg {
+    margin-left: 2px;
+    margin-top: 25px;
+    height: 150px;
+    width: 150px;
+    max-width: 50%;
+}
+
+.iconImgresize {
+    height: 25px;
+    width: 25px;
+    vertical-align: bottom;
+    margin-bottom: 10px;
+}
+
+.imgListIcon {
+    height: 24px;
+    width: 24px;
+}
+
+.searchBox {
+    height: 27px;
+    min-width: 272px;
+}

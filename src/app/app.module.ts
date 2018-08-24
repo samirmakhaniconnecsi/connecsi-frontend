@@ -31,6 +31,7 @@ import { AuthGuard } from './core/config/auth.guard';
 import { LoginHeaderComponent } from './commonComponent/loginHeader/loginHeader.component';
 import { ProfileComponent } from './moduleComponent/profile/profile.component';
 import { EditProfileComponent } from './moduleComponent/editProfile/editProfile.component';
+import { BrandService } from './core/services/brand.service';
 
 @NgModule({
   declarations: [
@@ -69,7 +70,8 @@ import { EditProfileComponent } from './moduleComponent/editProfile/editProfile.
   ],
   providers: [
     AuthGuard,
-    UserService
+    UserService,
+    BrandService
   ],
   bootstrap: [AppComponent]
 })

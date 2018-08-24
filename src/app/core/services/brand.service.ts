@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { HttpClient, HttpResponse, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { map } from 'rxjs/operators';
 
 @Injectable()
-export class UserService {
+export class BrandService {
     private domain: string;
     constructor(
         private httpClient: HttpClient
@@ -12,21 +12,20 @@ export class UserService {
         this.domain = "http://kiranpadwaltestconnecsi.pythonanywhere.com";
     }
 
-    loginService(body): Observable<any> {
-        const url = this.domain + "/api/User/login";
-        return this.httpClient.post(url, body, { observe: 'response' }).pipe(
+
+    getBrandById(id): Observable<any> {
+        const url = this.domain + "/api/Brand/" + id;
+        return this.httpClient.get(url, { observe: 'response' }).pipe(
             map((res: HttpResponse<any>) => {
                 return res;
             },
-                (error) => {
+                error => {
                     return error;
-                }
-
-            ));
+                }));
     }
-    registerService(body): Observable<any> {
-        const url = this.domain + "/api/Brand/register";
-        return this.httpClient.post(url, body, { observe: 'response' }).pipe(
+    updateBrandById(id, data): Observable<any> {
+        const url = this.domain + "/api/Brand/" + id;
+        return this.httpClient.put(url, data, { observe: 'response' }).pipe(
             map((res: HttpResponse<any>) => {
                 return res;
             },

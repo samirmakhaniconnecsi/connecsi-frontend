@@ -92,3 +92,13 @@ ul#horizontal-list li span {
     text-align: center;
   }
 }
+
+.loginButton {
+  font-weight: bold;
+  color: #FAF50B;
+  background-color: #732BBF;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.2rem;
+}
